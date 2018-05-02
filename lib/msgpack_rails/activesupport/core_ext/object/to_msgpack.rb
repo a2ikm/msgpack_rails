@@ -13,7 +13,7 @@ else
 end
 klasses.each do |klass|
   klass.class_eval do
-    alias_method :msgpack_to_msgpack, :to_msgpack if respond_to?(:to_msgpack)
+    alias_method :msgpack_to_msgpack, :to_msgpack if instance_methods.include?(:to_msgpack)
     # Dumps object in msgpack. See http://msgpack.org for more infoa
     def to_msgpack(options = nil)
       ActiveSupport::MessagePack.encode(self, options)
