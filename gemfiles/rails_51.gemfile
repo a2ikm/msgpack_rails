@@ -1,0 +1,14 @@
+source 'https://rubygems.org'
+
+gem 'activesupport', '~> 5.1.0'
+gem 'activemodel', '~> 5.1.0'
+
+gemspec :path => '../'
+
+platforms :ruby do
+  gem 'sqlite3'
+end
+
+platforms :jruby do
+  gem 'activerecord-jdbcsqlite3-adapter'
+end

@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "activesupport", ">= 3.0"
+  spec.add_runtime_dependency "activesupport", ">= 5.0"
   if RUBY_ENGINE == "jruby"
     spec.add_runtime_dependency "msgpack-jruby"
   else
@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rake", "~> 10.3.1"
   spec.add_development_dependency "minitest", "~> 5.3.3"
-  spec.add_development_dependency "activemodel", "~> 4.1.0"
+  spec.add_development_dependency "activemodel", ">= 5.0.0"
 end

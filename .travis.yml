@@ -1,5 +1,11 @@
 language: ruby
 rvm:
-  - 1.9.3
-  - 2.0.0
-  - 2.1.0
+  - 2.2.10
+  - 2.3.7
+  - 2.4.4
+  - 2.5.1
+gemfile:
+  - gemfiles/rails_50.gemfile
+  - gemfiles/rails_51.gemfile
+  - gemfiles/rails_52.gemfile
+  - gemfiles/rails_edge.gemfile
