@@ -9,3 +9,9 @@ gemfile:
   - gemfiles/rails_51.gemfile
   - gemfiles/rails_52.gemfile
   - gemfiles/rails_edge.gemfile
+matrix:
+  exclude:
+    - rvm: 2.2.10
+      gemfile: gemfiles/rails_edge.gemfile
+    - rvm: 2.3.7
+      gemfile: gemfiles/rails_edge.gemfile
