@@ -1,9 +1,6 @@
 # Hack to load msgpack gem first so we can overwrite its to_msgpack.
 
-begin
-  require "msgpack"
-rescue LoadError
-end
+require "msgpack"
 
 # The msgpack gem adds a few modules to Ruby core classes containing :to_msgpack definition, overwriting
 # their default behavior. That said, we need to define the basic to_msgpack method in all of them,
